@@ -1,0 +1,209 @@
+[0.000000] (-) TimerEvent: {}
+[0.002294] (image_subscriber) JobQueued: {'identifier': 'image_subscriber', 'dependencies': OrderedDict()}
+[0.002594] (subscribers) JobQueued: {'identifier': 'subscribers', 'dependencies': OrderedDict()}
+[0.002728] (tfmini) JobQueued: {'identifier': 'tfmini', 'dependencies': OrderedDict()}
+[0.002772] (tts) JobQueued: {'identifier': 'tts', 'dependencies': OrderedDict()}
+[0.002815] (image_subscriber) JobStarted: {'identifier': 'image_subscriber'}
+[0.081667] (subscribers) JobStarted: {'identifier': 'subscribers'}
+[0.099397] (-) TimerEvent: {}
+[0.105100] (tfmini) JobStarted: {'identifier': 'tfmini'}
+[0.127536] (tts) JobStarted: {'identifier': 'tts'}
+[0.200147] (-) TimerEvent: {}
+[0.310332] (-) TimerEvent: {}
+[0.416442] (-) TimerEvent: {}
+[0.523500] (-) TimerEvent: {}
+[0.627316] (-) TimerEvent: {}
+[0.727820] (-) TimerEvent: {}
+[0.833323] (-) TimerEvent: {}
+[0.936912] (-) TimerEvent: {}
+[1.041117] (-) TimerEvent: {}
+[1.142692] (-) TimerEvent: {}
+[1.247998] (-) TimerEvent: {}
+[1.348479] (-) TimerEvent: {}
+[1.449123] (-) TimerEvent: {}
+[1.549661] (-) TimerEvent: {}
+[1.650968] (-) TimerEvent: {}
+[1.754140] (-) TimerEvent: {}
+[1.855974] (-) TimerEvent: {}
+[1.956661] (-) TimerEvent: {}
+[2.058084] (-) TimerEvent: {}
+[2.161298] (-) TimerEvent: {}
+[2.262190] (-) TimerEvent: {}
+[2.363834] (-) TimerEvent: {}
+[2.464873] (-) TimerEvent: {}
+[2.565285] (-) TimerEvent: {}
+[2.668071] (-) TimerEvent: {}
+[2.773656] (-) TimerEvent: {}
+[2.889934] (-) TimerEvent: {}
+[2.994946] (-) TimerEvent: {}
+[3.095436] (-) TimerEvent: {}
+[3.198971] (-) TimerEvent: {}
+[3.300673] (-) TimerEvent: {}
+[3.408913] (-) TimerEvent: {}
+[3.510347] (-) TimerEvent: {}
+[3.610916] (-) TimerEvent: {}
+[3.715989] (-) TimerEvent: {}
+[3.837594] (-) TimerEvent: {}
+[3.948012] (-) TimerEvent: {}
+[4.053016] (-) TimerEvent: {}
+[4.154256] (-) TimerEvent: {}
+[4.254645] (-) TimerEvent: {}
+[4.357424] (-) TimerEvent: {}
+[4.459970] (-) TimerEvent: {}
+[4.562947] (-) TimerEvent: {}
+[4.665491] (-) TimerEvent: {}
+[4.768095] (-) TimerEvent: {}
+[4.869444] (-) TimerEvent: {}
+[4.970256] (-) TimerEvent: {}
+[5.070860] (-) TimerEvent: {}
+[5.172169] (-) TimerEvent: {}
+[5.272697] (-) TimerEvent: {}
+[5.373266] (-) TimerEvent: {}
+[5.473732] (-) TimerEvent: {}
+[5.575738] (-) TimerEvent: {}
+[5.678692] (-) TimerEvent: {}
+[5.784544] (-) TimerEvent: {}
+[5.896524] (-) TimerEvent: {}
+[6.000785] (-) TimerEvent: {}
+[6.107965] (-) TimerEvent: {}
+[6.208432] (-) TimerEvent: {}
+[6.328262] (image_subscriber) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/image_subscriber', 'build', '--build-base', '/vas/build/image_subscriber/build', 'install', '--record', '/vas/build/image_subscriber/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/vas/image_subscriber', 'env': {'HOSTNAME': 'rpi5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', 'PULSE_SERVER': 'unix:/run/user/1000/pulse/native', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/vas/build/image_subscriber', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[6.330613] (-) TimerEvent: {}
+[6.435491] (-) TimerEvent: {}
+[6.536316] (-) TimerEvent: {}
+[6.637571] (-) TimerEvent: {}
+[6.747617] (-) TimerEvent: {}
+[6.860978] (-) TimerEvent: {}
+[6.972284] (-) TimerEvent: {}
+[7.093599] (-) TimerEvent: {}
+[7.232073] (-) TimerEvent: {}
+[7.339010] (-) TimerEvent: {}
+[7.460021] (-) TimerEvent: {}
+[7.516115] (tfmini) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/tfmini', 'build', '--build-base', '/vas/build/tfmini/build', 'install', '--record', '/vas/build/tfmini/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/vas/tfmini', 'env': {'HOSTNAME': 'rpi5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', 'PULSE_SERVER': 'unix:/run/user/1000/pulse/native', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/vas/build/tfmini', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/vas/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tfmini/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[7.560287] (tts) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/tts', 'build', '--build-base', '/vas/build/tts/build', 'install', '--record', '/vas/build/tts/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/vas/tts', 'env': {'HOSTNAME': 'rpi5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', 'PULSE_SERVER': 'unix:/run/user/1000/pulse/native', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/vas/build/tts', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/vas/build/tts/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tts/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[7.621224] (-) TimerEvent: {}
+[7.636530] (subscribers) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/subscribers', 'build', '--build-base', '/vas/build/subscribers/build', 'install', '--record', '/vas/build/subscribers/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/vas/subscribers', 'env': {'HOSTNAME': 'rpi5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', 'PULSE_SERVER': 'unix:/run/user/1000/pulse/native', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/vas/build/subscribers', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[7.731982] (-) TimerEvent: {}
+[7.839726] (-) TimerEvent: {}
+[7.952317] (-) TimerEvent: {}
+[8.076122] (-) TimerEvent: {}
+[8.179980] (-) TimerEvent: {}
+[8.296401] (-) TimerEvent: {}
+[8.407340] (-) TimerEvent: {}
+[8.528565] (-) TimerEvent: {}
+[8.630116] (-) TimerEvent: {}
+[8.731013] (-) TimerEvent: {}
+[8.746638] (image_subscriber) StdoutLine: {'line': b'running egg_info\n'}
+[8.749219] (image_subscriber) StdoutLine: {'line': b'writing ../build/image_subscriber/image_subscriber.egg-info/PKG-INFO\n'}
+[8.808362] (image_subscriber) StdoutLine: {'line': b'writing dependency_links to ../build/image_subscriber/image_subscriber.egg-info/dependency_links.txt\n'}
+[8.808962] (image_subscriber) StdoutLine: {'line': b'writing entry points to ../build/image_subscriber/image_subscriber.egg-info/entry_points.txt\n'}
+[8.809246] (image_subscriber) StdoutLine: {'line': b'writing requirements to ../build/image_subscriber/image_subscriber.egg-info/requires.txt\n'}
+[8.812604] (image_subscriber) StdoutLine: {'line': b'writing top-level names to ../build/image_subscriber/image_subscriber.egg-info/top_level.txt\n'}
+[8.828509] (image_subscriber) StdoutLine: {'line': b"reading manifest file '../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'\n"}
+[8.831300] (-) TimerEvent: {}
+[8.851837] (image_subscriber) StdoutLine: {'line': b"writing manifest file '../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'\n"}
+[8.852607] (image_subscriber) StdoutLine: {'line': b'running build\n'}
+[8.852719] (image_subscriber) StdoutLine: {'line': b'running build_py\n'}
+[8.899767] (image_subscriber) StdoutLine: {'line': b'running install\n'}
+[8.900381] (image_subscriber) StdoutLine: {'line': b'running install_lib\n'}
+[8.920885] (image_subscriber) StdoutLine: {'line': b'running install_data\n'}
+[8.929655] (image_subscriber) StdoutLine: {'line': b'running install_egg_info\n'}
+[8.931661] (-) TimerEvent: {}
+[9.004067] (image_subscriber) StdoutLine: {'line': b"removing '/vas/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.004437] (image_subscriber) StdoutLine: {'line': b'Copying ../build/image_subscriber/image_subscriber.egg-info to /vas/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info\n'}
+[9.014257] (image_subscriber) StdoutLine: {'line': b'running install_scripts\n'}
+[9.036418] (-) TimerEvent: {}
+[9.153639] (-) TimerEvent: {}
+[9.164080] (image_subscriber) StdoutLine: {'line': b"writing list of installed files to '/vas/build/image_subscriber/install.log'\n"}
+[9.260119] (-) TimerEvent: {}
+[9.381799] (-) TimerEvent: {}
+[9.483156] (-) TimerEvent: {}
+[9.586643] (-) TimerEvent: {}
+[9.656659] (image_subscriber) CommandEnded: {'returncode': 0}
+[9.687991] (-) TimerEvent: {}
+[9.790526] (subscribers) StdoutLine: {'line': b'running egg_info\n'}
+[9.794242] (-) TimerEvent: {}
+[9.812126] (subscribers) StdoutLine: {'line': b'writing ../build/subscribers/subscribers.egg-info/PKG-INFO\n'}
+[9.815960] (tts) StdoutLine: {'line': b'running egg_info\n'}
+[9.852668] (subscribers) StdoutLine: {'line': b'writing dependency_links to ../build/subscribers/subscribers.egg-info/dependency_links.txt\n'}
+[9.853097] (subscribers) StdoutLine: {'line': b'writing entry points to ../build/subscribers/subscribers.egg-info/entry_points.txt\n'}
+[9.853328] (tts) StdoutLine: {'line': b'writing ../build/tts/tts.egg-info/PKG-INFO\n'}
+[9.853513] (tts) StdoutLine: {'line': b'writing dependency_links to ../build/tts/tts.egg-info/dependency_links.txt\n'}
+[9.853626] (tts) StdoutLine: {'line': b'writing entry points to ../build/tts/tts.egg-info/entry_points.txt\n'}
+[9.853714] (tts) StdoutLine: {'line': b'writing requirements to ../build/tts/tts.egg-info/requires.txt\n'}
+[9.853798] (tts) StdoutLine: {'line': b'writing top-level names to ../build/tts/tts.egg-info/top_level.txt\n'}
+[9.863265] (subscribers) StdoutLine: {'line': b'writing requirements to ../build/subscribers/subscribers.egg-info/requires.txt\n'}
+[9.863688] (subscribers) StdoutLine: {'line': b'writing top-level names to ../build/subscribers/subscribers.egg-info/top_level.txt\n'}
+[9.868024] (subscribers) StdoutLine: {'line': b"reading manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'\n"}
+[9.868332] (subscribers) StdoutLine: {'line': b"writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'\n"}
+[9.872098] (tts) StdoutLine: {'line': b"reading manifest file '../build/tts/tts.egg-info/SOURCES.txt'\n"}
+[9.876954] (tts) StdoutLine: {'line': b"writing manifest file '../build/tts/tts.egg-info/SOURCES.txt'\n"}
+[9.877198] (tts) StdoutLine: {'line': b'running build\n'}
+[9.877307] (tts) StdoutLine: {'line': b'running build_py\n'}
+[9.877434] (subscribers) StdoutLine: {'line': b'running build\n'}
+[9.877586] (subscribers) StdoutLine: {'line': b'running build_py\n'}
+[9.877680] (subscribers) StdoutLine: {'line': b'running install\n'}
+[9.877756] (subscribers) StdoutLine: {'line': b'running install_lib\n'}
+[9.877837] (tts) StdoutLine: {'line': b'running install\n'}
+[9.877915] (tts) StdoutLine: {'line': b'running install_lib\n'}
+[9.892058] (tts) StdoutLine: {'line': b'running install_data\n'}
+[9.892810] (tts) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.893257] (subscribers) StdoutLine: {'line': b'running install_data\n'}
+[9.901131] (-) TimerEvent: {}
+[9.944207] (subscribers) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.944420] (subscribers) StdoutLine: {'line': b"removing '/vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.944494] (tts) StdoutLine: {'line': b"removing '/vas/install/tts/lib/python3.10/site-packages/tts-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.944575] (tts) StdoutLine: {'line': b'Copying ../build/tts/tts.egg-info to /vas/install/tts/lib/python3.10/site-packages/tts-0.0.0-py3.10.egg-info\n'}
+[9.944633] (tts) StdoutLine: {'line': b'running install_scripts\n'}
+[9.965102] (subscribers) StdoutLine: {'line': b'Copying ../build/subscribers/subscribers.egg-info to /vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info\n'}
+[9.966101] (subscribers) StdoutLine: {'line': b'running install_scripts\n'}
+[10.008030] (-) TimerEvent: {}
+[10.116047] (-) TimerEvent: {}
+[10.121786] (image_subscriber) JobEnded: {'identifier': 'image_subscriber', 'rc': 0}
+[10.257464] (-) TimerEvent: {}
+[10.314843] (tts) StdoutLine: {'line': b'Installing tts_node script to /vas/install/tts/lib/tts\n'}
+[10.333063] (tts) StdoutLine: {'line': b"writing list of installed files to '/vas/build/tts/install.log'\n"}
+[10.357710] (-) TimerEvent: {}
+[10.458567] (subscribers) StdoutLine: {'line': b'Installing detections_node script to /vas/install/subscribers/lib/subscribers\n'}
+[10.459008] (-) TimerEvent: {}
+[10.508879] (subscribers) StdoutLine: {'line': b'Installing image_node script to /vas/install/subscribers/lib/subscribers\n'}
+[10.512878] (subscribers) StdoutLine: {'line': b"writing list of installed files to '/vas/build/subscribers/install.log'\n"}
+[10.559236] (-) TimerEvent: {}
+[10.662983] (-) TimerEvent: {}
+[10.774276] (-) TimerEvent: {}
+[10.880025] (-) TimerEvent: {}
+[10.980529] (-) TimerEvent: {}
+[11.081474] (-) TimerEvent: {}
+[11.164228] (tts) CommandEnded: {'returncode': 0}
+[11.194448] (-) TimerEvent: {}
+[11.238731] (tfmini) StdoutLine: {'line': b'running egg_info\n'}
+[11.245671] (tfmini) StdoutLine: {'line': b'writing ../build/tfmini/tfmini.egg-info/PKG-INFO\n'}
+[11.246092] (tfmini) StdoutLine: {'line': b'writing dependency_links to ../build/tfmini/tfmini.egg-info/dependency_links.txt\n'}
+[11.246244] (tfmini) StdoutLine: {'line': b'writing entry points to ../build/tfmini/tfmini.egg-info/entry_points.txt\n'}
+[11.268248] (tfmini) StdoutLine: {'line': b'writing requirements to ../build/tfmini/tfmini.egg-info/requires.txt\n'}
+[11.269105] (tfmini) StdoutLine: {'line': b'writing top-level names to ../build/tfmini/tfmini.egg-info/top_level.txt\n'}
+[11.294852] (tfmini) StdoutLine: {'line': b"reading manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'\n"}
+[11.297610] (-) TimerEvent: {}
+[11.329860] (tts) JobEnded: {'identifier': 'tts', 'rc': 0}
+[11.337017] (tfmini) StdoutLine: {'line': b"writing manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'\n"}
+[11.338133] (tfmini) StdoutLine: {'line': b'running build\n'}
+[11.338331] (tfmini) StdoutLine: {'line': b'running build_py\n'}
+[11.338445] (tfmini) StdoutLine: {'line': b'running install\n'}
+[11.350681] (tfmini) StdoutLine: {'line': b'running install_lib\n'}
+[11.352219] (tfmini) StdoutLine: {'line': b'running install_data\n'}
+[11.361015] (tfmini) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.361280] (tfmini) StdoutLine: {'line': b"removing '/vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[11.361372] (tfmini) StdoutLine: {'line': b'Copying ../build/tfmini/tfmini.egg-info to /vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info\n'}
+[11.361438] (tfmini) StdoutLine: {'line': b'running install_scripts\n'}
+[11.407822] (-) TimerEvent: {}
+[11.441729] (subscribers) CommandEnded: {'returncode': 0}
+[11.508393] (subscribers) JobEnded: {'identifier': 'subscribers', 'rc': 0}
+[11.510408] (-) TimerEvent: {}
+[11.560706] (tfmini) StdoutLine: {'line': b'Installing tfmini_node script to /vas/install/tfmini/lib/tfmini\n'}
+[11.565574] (tfmini) StdoutLine: {'line': b"writing list of installed files to '/vas/build/tfmini/install.log'\n"}
+[11.611710] (-) TimerEvent: {}
+[11.713133] (-) TimerEvent: {}
+[11.748185] (tfmini) CommandEnded: {'returncode': 0}
+[11.813422] (-) TimerEvent: {}
+[11.816425] (tfmini) JobEnded: {'identifier': 'tfmini', 'rc': 0}
+[11.820768] (-) EventReactorShutdown: {}

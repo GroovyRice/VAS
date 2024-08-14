@@ -1,0 +1,212 @@
+[0.227s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.227s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fff45e525c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fff45e51fc0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fff45e51fc0>>, mixin_verb=('build',))
+[0.419s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.420s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.421s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.421s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.421s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.421s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.421s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.421s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.421s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/vas'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extensions ['ignore', 'ignore_ament_install']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extension 'ignore'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extension 'ignore_ament_install'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extensions ['colcon_pkg']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extensions ['colcon_meta']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extension 'colcon_meta'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extensions ['ros']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(image_subscriber) by extension 'ros'
+[0.442s] DEBUG:colcon.colcon_core.package_identification:Package 'image_subscriber' with type 'ros.ament_python' and name 'image_subscriber'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extension 'ignore'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extension 'ignore_ament_install'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(subscribers) by extension 'ros'
+[0.445s] DEBUG:colcon.colcon_core.package_identification:Package 'subscribers' with type 'ros.ament_python' and name 'subscribers'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'colcon_pkg'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['colcon_meta']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'colcon_meta'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['ros']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'ros'
+[0.447s] DEBUG:colcon.colcon_core.package_identification:Package 'tfmini' with type 'ros.ament_python' and name 'tfmini'
+[0.447s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.448s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.482s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'cmake_args' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'cmake_target' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'cmake_clean_cache' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'cmake_clean_first' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'cmake_force_configure' from command line to 'False'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'ament_cmake_args' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'catkin_cmake_args' from command line to 'None'
+[0.483s] Level 5:colcon.colcon_core.verb:set package 'image_subscriber' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.484s] DEBUG:colcon.colcon_core.verb:Building package 'image_subscriber' with the following arguments: {'ament_cmake_args': None, 'build_base': '/vas/build/image_subscriber', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/vas/install/image_subscriber', 'merge_install': False, 'path': '/vas/image_subscriber', 'symlink_install': False, 'test_result_base': None}
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'cmake_args' from command line to 'None'
+[0.487s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'cmake_target' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'cmake_clean_cache' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'cmake_clean_first' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'cmake_force_configure' from command line to 'False'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'ament_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'catkin_cmake_args' from command line to 'None'
+[0.488s] Level 5:colcon.colcon_core.verb:set package 'subscribers' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.488s] DEBUG:colcon.colcon_core.verb:Building package 'subscribers' with the following arguments: {'ament_cmake_args': None, 'build_base': '/vas/build/subscribers', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/vas/install/subscribers', 'merge_install': False, 'path': '/vas/subscribers', 'symlink_install': False, 'test_result_base': None}
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_args' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_target' from command line to 'None'
+[0.491s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_clean_cache' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_clean_first' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_force_configure' from command line to 'False'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'ament_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'catkin_cmake_args' from command line to 'None'
+[0.492s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.492s] DEBUG:colcon.colcon_core.verb:Building package 'tfmini' with the following arguments: {'ament_cmake_args': None, 'build_base': '/vas/build/tfmini', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/vas/install/tfmini', 'merge_install': False, 'path': '/vas/tfmini', 'symlink_install': False, 'test_result_base': None}
+[0.492s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.494s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.494s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/vas/image_subscriber' with build type 'ament_python'
+[0.495s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_subscriber', 'ament_prefix_path')
+[0.499s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/image_subscriber/share/image_subscriber/hook/ament_prefix_path.ps1'
+[0.500s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/vas/install/image_subscriber/share/image_subscriber/hook/ament_prefix_path.dsv'
+[0.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/image_subscriber/share/image_subscriber/hook/ament_prefix_path.sh'
+[0.504s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.504s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.511s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/vas/subscribers' with build type 'ament_python'
+[0.511s] Level 1:colcon.colcon_core.shell:create_environment_hook('subscribers', 'ament_prefix_path')
+[0.512s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/subscribers/share/subscribers/hook/ament_prefix_path.ps1'
+[0.513s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/vas/install/subscribers/share/subscribers/hook/ament_prefix_path.dsv'
+[0.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/subscribers/share/subscribers/hook/ament_prefix_path.sh'
+[0.520s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.520s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.525s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/vas/tfmini' with build type 'ament_python'
+[0.527s] Level 1:colcon.colcon_core.shell:create_environment_hook('tfmini', 'ament_prefix_path')
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/tfmini/share/tfmini/hook/ament_prefix_path.ps1'
+[0.532s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/vas/install/tfmini/share/tfmini/hook/ament_prefix_path.dsv'
+[0.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/tfmini/share/tfmini/hook/ament_prefix_path.sh'
+[0.545s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.030s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/vas/image_subscriber'
+[1.031s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.031s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.565s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/vas/subscribers'
+[1.566s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.566s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.195s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/vas/tfmini'
+[2.196s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.950s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/vas/subscribers': PYTHONPATH=/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/subscribers build --build-base /vas/build/subscribers/build install --record /vas/build/subscribers/install.log --single-version-externally-managed install_data
+[2.954s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/vas/tfmini': PYTHONPATH=/vas/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /vas/build/tfmini/build install --record /vas/build/tfmini/install.log --single-version-externally-managed install_data
+[2.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/vas/image_subscriber': PYTHONPATH=/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/image_subscriber build --build-base /vas/build/image_subscriber/build install --record /vas/build/image_subscriber/install.log --single-version-externally-managed install_data
+[3.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/vas/tfmini' returned '0': PYTHONPATH=/vas/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /vas/build/tfmini/build install --record /vas/build/tfmini/install.log --single-version-externally-managed install_data
+[3.593s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini' for CMake module files
+[3.594s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini' for CMake config files
+[3.596s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini/lib'
+[3.597s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini/bin'
+[3.597s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini/lib/pkgconfig/tfmini.pc'
+[3.597s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini/lib/python3.10/site-packages'
+[3.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('tfmini', 'pythonpath')
+[3.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/tfmini/share/tfmini/hook/pythonpath.ps1'
+[3.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/vas/install/tfmini/share/tfmini/hook/pythonpath.dsv'
+[3.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/tfmini/share/tfmini/hook/pythonpath.sh'
+[3.605s] Level 1:colcon.colcon_core.environment:checking '/vas/install/tfmini/bin'
+[3.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tfmini)
+[3.606s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/tfmini/share/tfmini/package.ps1'
+[3.608s] INFO:colcon.colcon_core.shell:Creating package descriptor '/vas/install/tfmini/share/tfmini/package.dsv'
+[3.609s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/tfmini/share/tfmini/package.sh'
+[3.610s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/tfmini/share/tfmini/package.bash'
+[3.611s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/tfmini/share/tfmini/package.zsh'
+[3.613s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/vas/install/tfmini/share/colcon-core/packages/tfmini)
+[3.616s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers' for CMake module files
+[3.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/vas/subscribers' returned '0': PYTHONPATH=/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/subscribers build --build-base /vas/build/subscribers/build install --record /vas/build/subscribers/install.log --single-version-externally-managed install_data
+[3.617s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers' for CMake config files
+[3.618s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers/lib'
+[3.618s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers/bin'
+[3.619s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers/lib/pkgconfig/subscribers.pc'
+[3.619s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers/lib/python3.10/site-packages'
+[3.619s] Level 1:colcon.colcon_core.shell:create_environment_hook('subscribers', 'pythonpath')
+[3.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/subscribers/share/subscribers/hook/pythonpath.ps1'
+[3.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/vas/install/subscribers/share/subscribers/hook/pythonpath.dsv'
+[3.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/subscribers/share/subscribers/hook/pythonpath.sh'
+[3.622s] Level 1:colcon.colcon_core.environment:checking '/vas/install/subscribers/bin'
+[3.622s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(subscribers)
+[3.623s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/subscribers/share/subscribers/package.ps1'
+[3.623s] INFO:colcon.colcon_core.shell:Creating package descriptor '/vas/install/subscribers/share/subscribers/package.dsv'
+[3.624s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/subscribers/share/subscribers/package.sh'
+[3.625s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/subscribers/share/subscribers/package.bash'
+[3.626s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/subscribers/share/subscribers/package.zsh'
+[3.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/vas/install/subscribers/share/colcon-core/packages/subscribers)
+[3.628s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber' for CMake module files
+[3.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/vas/image_subscriber' returned '0': PYTHONPATH=/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/image_subscriber build --build-base /vas/build/image_subscriber/build install --record /vas/build/image_subscriber/install.log --single-version-externally-managed install_data
+[3.629s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber' for CMake config files
+[3.630s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber/lib'
+[3.630s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber/bin'
+[3.630s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber/lib/pkgconfig/image_subscriber.pc'
+[3.630s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber/lib/python3.10/site-packages'
+[3.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_subscriber', 'pythonpath')
+[3.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/image_subscriber/share/image_subscriber/hook/pythonpath.ps1'
+[3.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/vas/install/image_subscriber/share/image_subscriber/hook/pythonpath.dsv'
+[3.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/vas/install/image_subscriber/share/image_subscriber/hook/pythonpath.sh'
+[3.633s] Level 1:colcon.colcon_core.environment:checking '/vas/install/image_subscriber/bin'
+[3.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_subscriber)
+[3.633s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/image_subscriber/share/image_subscriber/package.ps1'
+[3.634s] INFO:colcon.colcon_core.shell:Creating package descriptor '/vas/install/image_subscriber/share/image_subscriber/package.dsv'
+[3.635s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/image_subscriber/share/image_subscriber/package.sh'
+[3.636s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/image_subscriber/share/image_subscriber/package.bash'
+[3.636s] INFO:colcon.colcon_core.shell:Creating package script '/vas/install/image_subscriber/share/image_subscriber/package.zsh'
+[3.637s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/vas/install/image_subscriber/share/colcon-core/packages/image_subscriber)
+[3.637s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.638s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.638s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.638s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[3.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.644s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.645s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.645s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[3.645s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.648s] INFO:colcon.colcon_core.shell:Creating prefix script '/vas/install/local_setup.ps1'
+[3.656s] INFO:colcon.colcon_core.shell:Creating prefix util module '/vas/install/_local_setup_util_ps1.py'
+[3.663s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/vas/install/setup.ps1'
+[3.667s] INFO:colcon.colcon_core.shell:Creating prefix script '/vas/install/local_setup.sh'
+[3.668s] INFO:colcon.colcon_core.shell:Creating prefix util module '/vas/install/_local_setup_util_sh.py'
+[3.670s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/vas/install/setup.sh'
+[3.672s] INFO:colcon.colcon_core.shell:Creating prefix script '/vas/install/local_setup.bash'
+[3.673s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/vas/install/setup.bash'
+[3.674s] INFO:colcon.colcon_core.shell:Creating prefix script '/vas/install/local_setup.zsh'
+[3.675s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/vas/install/setup.zsh'

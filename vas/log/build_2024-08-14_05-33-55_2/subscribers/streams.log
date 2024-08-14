@@ -1,0 +1,22 @@
+[4.704s] Invoking command in '/vas/subscribers': PYTHONPATH=/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/subscribers build --build-base /vas/build/subscribers/build install --record /vas/build/subscribers/install.log --single-version-externally-managed install_data
+[7.227s] running egg_info
+[7.227s] writing ../build/subscribers/subscribers.egg-info/PKG-INFO
+[7.227s] writing dependency_links to ../build/subscribers/subscribers.egg-info/dependency_links.txt
+[7.233s] writing entry points to ../build/subscribers/subscribers.egg-info/entry_points.txt
+[7.237s] writing requirements to ../build/subscribers/subscribers.egg-info/requires.txt
+[7.245s] writing top-level names to ../build/subscribers/subscribers.egg-info/top_level.txt
+[7.247s] reading manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+[7.248s] writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+[7.251s] running build
+[7.252s] running build_py
+[7.252s] running install
+[7.252s] running install_lib
+[7.260s] running install_data
+[7.260s] running install_egg_info
+[7.266s] removing '/vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info' (and everything under it)
+[7.266s] Copying ../build/subscribers/subscribers.egg-info to /vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info
+[7.266s] running install_scripts
+[7.316s] Installing detections_node script to /vas/install/subscribers/lib/subscribers
+[7.317s] Installing image_node script to /vas/install/subscribers/lib/subscribers
+[7.350s] writing list of installed files to '/vas/build/subscribers/install.log'
+[7.803s] Invoked command in '/vas/subscribers' returned '0': PYTHONPATH=/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/subscribers build --build-base /vas/build/subscribers/build install --record /vas/build/subscribers/install.log --single-version-externally-managed install_data

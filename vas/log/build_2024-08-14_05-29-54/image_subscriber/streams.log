@@ -1,0 +1,20 @@
+[4.121s] Invoking command in '/vas/image_subscriber': PYTHONPATH=/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/image_subscriber build --build-base /vas/build/image_subscriber/build install --record /vas/build/image_subscriber/install.log --single-version-externally-managed install_data
+[5.803s] running egg_info
+[5.803s] writing ../build/image_subscriber/image_subscriber.egg-info/PKG-INFO
+[5.816s] writing dependency_links to ../build/image_subscriber/image_subscriber.egg-info/dependency_links.txt
+[5.817s] writing entry points to ../build/image_subscriber/image_subscriber.egg-info/entry_points.txt
+[5.817s] writing requirements to ../build/image_subscriber/image_subscriber.egg-info/requires.txt
+[5.818s] writing top-level names to ../build/image_subscriber/image_subscriber.egg-info/top_level.txt
+[5.818s] reading manifest file '../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[5.818s] writing manifest file '../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[5.818s] running build
+[5.818s] running build_py
+[5.818s] running install
+[5.818s] running install_lib
+[5.818s] running install_data
+[5.818s] running install_egg_info
+[5.841s] removing '/vas/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info' (and everything under it)
+[5.842s] Copying ../build/image_subscriber/image_subscriber.egg-info to /vas/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info
+[5.844s] running install_scripts
+[5.871s] writing list of installed files to '/vas/build/image_subscriber/install.log'
+[6.087s] Invoked command in '/vas/image_subscriber' returned '0': PYTHONPATH=/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/image_subscriber build --build-base /vas/build/image_subscriber/build install --record /vas/build/image_subscriber/install.log --single-version-externally-managed install_data

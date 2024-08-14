@@ -1,0 +1,25 @@
+running egg_info
+writing ../build/subscribers/subscribers.egg-info/PKG-INFO
+writing dependency_links to ../build/subscribers/subscribers.egg-info/dependency_links.txt
+writing entry points to ../build/subscribers/subscribers.egg-info/entry_points.txt
+writing requirements to ../build/subscribers/subscribers.egg-info/requires.txt
+writing top-level names to ../build/subscribers/subscribers.egg-info/top_level.txt
+reading manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+running build
+running build_py
+copying subscribers/detections_node.py -> /vas/build/subscribers/build/lib/subscribers
+running install
+running install_lib
+copying /vas/build/subscribers/build/lib/subscribers/detections_node.py -> /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+byte-compiling /vas/install/subscribers/lib/python3.10/site-packages/subscribers/detections_node.py to detections_node.cpython-310.pyc
+/vas/install/subscribers/lib/python3.10/site-packages/subscribers/detections_node.py:141: SyntaxWarning: "is not" with a literal. Did you mean "!="?
+  if msg is not "":
+running install_data
+running install_egg_info
+removing '/vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/subscribers/subscribers.egg-info to /vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info
+running install_scripts
+Installing detections_node script to /vas/install/subscribers/lib/subscribers
+Installing image_node script to /vas/install/subscribers/lib/subscribers
+writing list of installed files to '/vas/build/subscribers/install.log'

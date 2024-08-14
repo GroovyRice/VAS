@@ -1,0 +1,18 @@
+[5.482s] Invoking command in '/vas/image_subscriber': PYTHONPATH=/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/image_subscriber build --build-base /vas/build/image_subscriber/build install --record /vas/build/image_subscriber/install.log --single-version-externally-managed install_data
+[6.888s] running egg_info
+[6.906s] writing ../build/image_subscriber/image_subscriber.egg-info/PKG-INFO
+[6.918s] writing dependency_links to ../build/image_subscriber/image_subscriber.egg-info/dependency_links.txt
+[6.918s] writing entry points to ../build/image_subscriber/image_subscriber.egg-info/entry_points.txt
+[6.918s] writing requirements to ../build/image_subscriber/image_subscriber.egg-info/requires.txt
+[6.924s] writing top-level names to ../build/image_subscriber/image_subscriber.egg-info/top_level.txt
+[6.937s] reading manifest file '../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[6.944s] writing manifest file '../build/image_subscriber/image_subscriber.egg-info/SOURCES.txt'
+[6.950s] running build
+[6.950s] running build_py
+[6.950s] running install
+[6.951s] running install_lib
+[6.994s] running install_data
+[6.994s] running install_egg_info
+[6.994s] removing '/vas/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info' (and everything under it)
+[7.007s] error: [Errno 2] No such file or directory: '/vas/install/image_subscriber/lib/python3.10/site-packages/image_subscriber-0.0.0-py3.10.egg-info'
+[7.457s] Invoked command in '/vas/image_subscriber' returned '1': PYTHONPATH=/vas/build/image_subscriber/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/image_subscriber/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/image_subscriber build --build-base /vas/build/image_subscriber/build install --record /vas/build/image_subscriber/install.log --single-version-externally-managed install_data

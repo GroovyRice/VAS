@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/subscribers/subscribers.egg-info
+writing ../build/subscribers/subscribers.egg-info/PKG-INFO
+writing dependency_links to ../build/subscribers/subscribers.egg-info/dependency_links.txt
+writing entry points to ../build/subscribers/subscribers.egg-info/entry_points.txt
+writing requirements to ../build/subscribers/subscribers.egg-info/requires.txt
+writing top-level names to ../build/subscribers/subscribers.egg-info/top_level.txt
+writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+reading manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /vas/build/subscribers/build
+creating /vas/build/subscribers/build/lib
+creating /vas/build/subscribers/build/lib/subscribers
+copying subscribers/__init__.py -> /vas/build/subscribers/build/lib/subscribers
+copying subscribers/image_node.py -> /vas/build/subscribers/build/lib/subscribers
+running install
+running install_lib
+creating /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+copying /vas/build/subscribers/build/lib/subscribers/__init__.py -> /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+copying /vas/build/subscribers/build/lib/subscribers/image_node.py -> /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+byte-compiling /vas/install/subscribers/lib/python3.10/site-packages/subscribers/__init__.py to __init__.cpython-310.pyc
+byte-compiling /vas/install/subscribers/lib/python3.10/site-packages/subscribers/image_node.py to image_node.cpython-310.pyc
+running install_data
+creating /vas/install/subscribers/share/ament_index
+creating /vas/install/subscribers/share/ament_index/resource_index
+creating /vas/install/subscribers/share/ament_index/resource_index/packages
+copying resource/subscribers -> /vas/install/subscribers/share/ament_index/resource_index/packages
+copying package.xml -> /vas/install/subscribers/share/subscribers
+running install_egg_info
+Copying ../build/subscribers/subscribers.egg-info to /vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info
+running install_scripts
+Installing image_node script to /vas/install/subscribers/lib/subscribers
+writing list of installed files to '/vas/build/subscribers/install.log'

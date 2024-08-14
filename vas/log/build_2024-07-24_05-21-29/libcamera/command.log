@@ -1,0 +1,6 @@
+Invoking command in '/VAS/build/libcamera': /usr/bin/meson setup --libdir=lib --prefix=/VAS/install/libcamera --buildtype=release /VAS/build/libcamera /VAS/libcamera
+Invoked command in '/VAS/build/libcamera' returned '0': /usr/bin/meson setup --libdir=lib --prefix=/VAS/install/libcamera --buildtype=release /VAS/build/libcamera /VAS/libcamera
+Invoking command in '/VAS/build/libcamera': /usr/bin/meson compile
+Invoked command in '/VAS/build/libcamera' returned '0': /usr/bin/meson compile
+Invoking command in '/VAS/build/libcamera': /usr/bin/meson install
+Invoked command in '/VAS/build/libcamera' returned '0': /usr/bin/meson install

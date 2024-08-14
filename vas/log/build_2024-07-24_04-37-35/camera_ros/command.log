@@ -1,0 +1,6 @@
+Invoking command in '/VAS/build/camera_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /VAS/camera_ros -DCMAKE_INSTALL_PREFIX=/VAS/install/camera_ros
+Invoked command in '/VAS/build/camera_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /VAS/camera_ros -DCMAKE_INSTALL_PREFIX=/VAS/install/camera_ros
+Invoking command in '/VAS/build/camera_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /VAS/build/camera_ros -- -j4 -l4
+Invoked command in '/VAS/build/camera_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /VAS/build/camera_ros -- -j4 -l4
+Invoking command in '/VAS/build/camera_ros': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /VAS/build/camera_ros
+Invoked command in '/VAS/build/camera_ros' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /VAS/build/camera_ros

@@ -1,0 +1,3 @@
+[console_scripts]
+tts_node = tts.tts_node:main
+

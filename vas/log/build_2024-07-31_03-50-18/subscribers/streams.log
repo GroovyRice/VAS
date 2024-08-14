@@ -1,0 +1,37 @@
+[1.384s] Invoking command in '/vas/subscribers': PYTHONPATH=/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/subscribers build --build-base /vas/build/subscribers/build install --record /vas/build/subscribers/install.log --single-version-externally-managed install_data
+[1.701s] running egg_info
+[1.703s] creating ../build/subscribers/subscribers.egg-info
+[1.703s] writing ../build/subscribers/subscribers.egg-info/PKG-INFO
+[1.703s] writing dependency_links to ../build/subscribers/subscribers.egg-info/dependency_links.txt
+[1.703s] writing entry points to ../build/subscribers/subscribers.egg-info/entry_points.txt
+[1.703s] writing requirements to ../build/subscribers/subscribers.egg-info/requires.txt
+[1.704s] writing top-level names to ../build/subscribers/subscribers.egg-info/top_level.txt
+[1.704s] writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+[1.706s] reading manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+[1.707s] writing manifest file '../build/subscribers/subscribers.egg-info/SOURCES.txt'
+[1.708s] running build
+[1.708s] running build_py
+[1.708s] creating /vas/build/subscribers/build
+[1.709s] creating /vas/build/subscribers/build/lib
+[1.709s] creating /vas/build/subscribers/build/lib/subscribers
+[1.709s] copying subscribers/__init__.py -> /vas/build/subscribers/build/lib/subscribers
+[1.709s] copying subscribers/image_node.py -> /vas/build/subscribers/build/lib/subscribers
+[1.710s] running install
+[1.710s] running install_lib
+[1.711s] creating /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+[1.711s] copying /vas/build/subscribers/build/lib/subscribers/__init__.py -> /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+[1.711s] copying /vas/build/subscribers/build/lib/subscribers/image_node.py -> /vas/install/subscribers/lib/python3.10/site-packages/subscribers
+[1.712s] byte-compiling /vas/install/subscribers/lib/python3.10/site-packages/subscribers/__init__.py to __init__.cpython-310.pyc
+[1.712s] byte-compiling /vas/install/subscribers/lib/python3.10/site-packages/subscribers/image_node.py to image_node.cpython-310.pyc
+[1.713s] running install_data
+[1.713s] creating /vas/install/subscribers/share/ament_index
+[1.713s] creating /vas/install/subscribers/share/ament_index/resource_index
+[1.713s] creating /vas/install/subscribers/share/ament_index/resource_index/packages
+[1.713s] copying resource/subscribers -> /vas/install/subscribers/share/ament_index/resource_index/packages
+[1.713s] copying package.xml -> /vas/install/subscribers/share/subscribers
+[1.713s] running install_egg_info
+[1.717s] Copying ../build/subscribers/subscribers.egg-info to /vas/install/subscribers/lib/python3.10/site-packages/subscribers-0.0.0-py3.10.egg-info
+[1.718s] running install_scripts
+[1.771s] Installing image_node script to /vas/install/subscribers/lib/subscribers
+[1.772s] writing list of installed files to '/vas/build/subscribers/install.log'
+[1.892s] Invoked command in '/vas/subscribers' returned '0': PYTHONPATH=/vas/build/subscribers/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/subscribers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/subscribers build --build-base /vas/build/subscribers/build install --record /vas/build/subscribers/install.log --single-version-externally-managed install_data

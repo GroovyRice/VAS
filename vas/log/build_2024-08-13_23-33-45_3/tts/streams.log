@@ -1,0 +1,21 @@
+[7.453s] Invoking command in '/vas/tts': PYTHONPATH=/vas/build/tts/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tts/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tts build --build-base /vas/build/tts/build install --record /vas/build/tts/install.log --single-version-externally-managed install_data
+[8.906s] running egg_info
+[8.907s] writing ../build/tts/tts.egg-info/PKG-INFO
+[8.910s] writing dependency_links to ../build/tts/tts.egg-info/dependency_links.txt
+[8.930s] writing entry points to ../build/tts/tts.egg-info/entry_points.txt
+[8.930s] writing requirements to ../build/tts/tts.egg-info/requires.txt
+[8.931s] writing top-level names to ../build/tts/tts.egg-info/top_level.txt
+[8.931s] reading manifest file '../build/tts/tts.egg-info/SOURCES.txt'
+[8.931s] writing manifest file '../build/tts/tts.egg-info/SOURCES.txt'
+[8.931s] running build
+[8.931s] running build_py
+[8.931s] running install
+[8.931s] running install_lib
+[8.931s] running install_data
+[8.931s] running install_egg_info
+[8.946s] removing '/vas/install/tts/lib/python3.10/site-packages/tts-0.0.0-py3.10.egg-info' (and everything under it)
+[8.964s] Copying ../build/tts/tts.egg-info to /vas/install/tts/lib/python3.10/site-packages/tts-0.0.0-py3.10.egg-info
+[8.965s] running install_scripts
+[9.032s] Installing tts_node script to /vas/install/tts/lib/tts
+[9.032s] writing list of installed files to '/vas/build/tts/install.log'
+[9.176s] Invoked command in '/vas/tts' returned '0': PYTHONPATH=/vas/build/tts/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tts/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tts build --build-base /vas/build/tts/build install --record /vas/build/tts/install.log --single-version-externally-managed install_data

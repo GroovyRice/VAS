@@ -1,0 +1,35 @@
+[0.000000] (-) TimerEvent: {}
+[0.000284] (tfmini) JobQueued: {'identifier': 'tfmini', 'dependencies': OrderedDict()}
+[0.000564] (tfmini) JobStarted: {'identifier': 'tfmini'}
+[0.102069] (-) TimerEvent: {}
+[0.202479] (-) TimerEvent: {}
+[0.305916] (-) TimerEvent: {}
+[0.406329] (-) TimerEvent: {}
+[0.506850] (-) TimerEvent: {}
+[0.607185] (-) TimerEvent: {}
+[0.651162] (tfmini) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/tfmini', 'build', '--build-base', '/vas/build/tfmini/build', 'install', '--record', '/vas/build/tfmini/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/vas/tfmini', 'env': {'HOSTNAME': 'rpi5', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/', 'ROS_PYTHON_VERSION': '3', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'PWD': '/vas/build/tfmini', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/vas/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tfmini/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1'}, 'shell': False}
+[0.707297] (-) TimerEvent: {}
+[0.807669] (-) TimerEvent: {}
+[0.885309] (tfmini) StdoutLine: {'line': b'running egg_info\n'}
+[0.886173] (tfmini) StdoutLine: {'line': b'writing ../build/tfmini/tfmini.egg-info/PKG-INFO\n'}
+[0.886473] (tfmini) StdoutLine: {'line': b'writing dependency_links to ../build/tfmini/tfmini.egg-info/dependency_links.txt\n'}
+[0.888998] (tfmini) StdoutLine: {'line': b'writing entry points to ../build/tfmini/tfmini.egg-info/entry_points.txt\n'}
+[0.889638] (tfmini) StdoutLine: {'line': b'writing requirements to ../build/tfmini/tfmini.egg-info/requires.txt\n'}
+[0.890132] (tfmini) StdoutLine: {'line': b'writing top-level names to ../build/tfmini/tfmini.egg-info/top_level.txt\n'}
+[0.893223] (tfmini) StdoutLine: {'line': b"reading manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'\n"}
+[0.894019] (tfmini) StdoutLine: {'line': b"writing manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'\n"}
+[0.894268] (tfmini) StdoutLine: {'line': b'running build\n'}
+[0.894364] (tfmini) StdoutLine: {'line': b'running build_py\n'}
+[0.894495] (tfmini) StdoutLine: {'line': b'running install\n'}
+[0.894881] (tfmini) StdoutLine: {'line': b'running install_lib\n'}
+[0.896161] (tfmini) StdoutLine: {'line': b'running install_data\n'}
+[0.896285] (tfmini) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.898209] (tfmini) StdoutLine: {'line': b"removing '/vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.898881] (tfmini) StdoutLine: {'line': b'Copying ../build/tfmini/tfmini.egg-info to /vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info\n'}
+[0.899326] (tfmini) StdoutLine: {'line': b'running install_scripts\n'}
+[0.907731] (-) TimerEvent: {}
+[0.924701] (tfmini) StdoutLine: {'line': b'Installing tfmini_node script to /vas/install/tfmini/lib/tfmini\n'}
+[0.925339] (tfmini) StdoutLine: {'line': b"writing list of installed files to '/vas/build/tfmini/install.log'\n"}
+[0.984619] (tfmini) CommandEnded: {'returncode': 0}
+[0.997508] (tfmini) JobEnded: {'identifier': 'tfmini', 'rc': 0}
+[0.998322] (-) EventReactorShutdown: {}

@@ -1,0 +1,46 @@
+version: "3.9"
+services:
+  depthai:
+    image: dai:latest
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev:/dev
+    environment:
+      - DISPLAY
+      - LIBGL_ALWAYS_SOFTWARE=1
+    tty: true
+  tfmini:
+    image: tfmini:latest
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - /home/rhysb/VAS/vas:/vas
+      - /dev:/dev
+    tty: true
+  tts:
+    image: tts:latest
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - /home/rhysb/VAS/vas:/vas
+      - /dev:/dev
+      - /run/user/1000/pulse:/run/user/1000/pulse
+      - /etc/machine-id:/etc/machine-id
+    environment:
+      - DISPLAY
+      - PULSE_SERVER=unix:/run/user/1000/pulse/native
+    tty: true
+  vas:
+    image: vas:latest
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - /home/rhysb/VAS/vas:/vas
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /dev:/dev
+    environment:
+      - DISPLAY
+      - LIBGL_ALWAYS_SOFTWARE=1
+    tty: true

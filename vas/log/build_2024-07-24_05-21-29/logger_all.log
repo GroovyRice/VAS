@@ -1,0 +1,248 @@
+[0.263s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.263s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, meson_args=[], ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fff84b56d40>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fff84b567d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fff84b567d0>>, mixin_verb=('build',))
+[0.416s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.417s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/Gazebo.meta'
+[0.417s] INFO:colcon.colcon_metadata.package_discovery.colcon_meta:Using configuration from '/root/.colcon/metadata/default/fastrtps.meta'
+[0.417s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.417s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.418s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.418s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/VAS'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'meson', 'python']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'meson'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extension 'colcon_meta'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extensions ['ros']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(camera_ros) by extension 'ros'
+[0.442s] DEBUG:colcon.colcon_core.package_identification:Package 'camera_ros' with type 'ros.ament_cmake' and name 'camera_ros'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'ros'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extensions ['cmake', 'meson', 'python']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'cmake'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'meson'
+[0.584s] INFO:colcon.colcon_meson.identification:'libcamera' dependencies: {'', 'lttng-ust', 'pybind11', 'gstreamer-1.0', 'libunwind', 'libjpeg', 'gstreamer-allocators-1.0', 'glib-2.0', 'libdw', 'libyuv', 'libevent_pthreads', 'gnutls', 'yaml-0.1', 'python3', 'libdrm', 'gstreamer-video-1.0', 'libtiff-4', 'libexif', 'libudev', 'SDL2', 'threads', 'qt5', 'gtest'}
+[0.584s] Level 1:colcon.colcon_core.package_identification:_identify(libcamera) by extension 'python'
+[0.590s] DEBUG:colcon.colcon_core.package_identification:Package 'libcamera' with type 'meson' and name 'libcamera'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'ignore'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'ignore_ament_install'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['colcon_pkg']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'colcon_pkg'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['colcon_meta']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'colcon_meta'
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extensions ['ros']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(tfmini) by extension 'ros'
+[0.623s] DEBUG:colcon.colcon_core.package_identification:Package 'tfmini' with type 'ros.ament_python' and name 'tfmini'
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.623s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'cmake_args' from command line to 'None'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'cmake_target' from command line to 'None'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.655s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'cmake_clean_first' from command line to 'False'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'cmake_force_configure' from command line to 'False'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'meson_args' from command line to '[]'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'ament_cmake_args' from command line to 'None'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.656s] Level 5:colcon.colcon_core.verb:set package 'libcamera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.656s] DEBUG:colcon.colcon_core.verb:Building package 'libcamera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/VAS/build/libcamera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/VAS/install/libcamera', 'merge_install': False, 'meson_args': [], 'path': '/VAS/libcamera', 'symlink_install': False, 'test_result_base': None}
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_target' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_clean_cache' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_clean_first' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'cmake_force_configure' from command line to 'False'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'meson_args' from command line to '[]'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'ament_cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'catkin_cmake_args' from command line to 'None'
+[0.667s] Level 5:colcon.colcon_core.verb:set package 'tfmini' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.667s] DEBUG:colcon.colcon_core.verb:Building package 'tfmini' with the following arguments: {'ament_cmake_args': None, 'build_base': '/VAS/build/tfmini', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/VAS/install/tfmini', 'merge_install': False, 'meson_args': [], 'path': '/VAS/tfmini', 'symlink_install': False, 'test_result_base': None}
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'cmake_args' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'cmake_target' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'meson_args' from command line to '[]'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.680s] Level 5:colcon.colcon_core.verb:set package 'camera_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.680s] DEBUG:colcon.colcon_core.verb:Building package 'camera_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/VAS/build/camera_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/VAS/install/camera_ros', 'merge_install': False, 'meson_args': [], 'path': '/VAS/camera_ros', 'symlink_install': False, 'test_result_base': None}
+[0.681s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.682s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.685s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.690s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/VAS/tfmini' with build type 'ament_python'
+[0.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('tfmini', 'ament_prefix_path')
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/tfmini/share/tfmini/hook/ament_prefix_path.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/tfmini/share/tfmini/hook/ament_prefix_path.dsv'
+[0.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/tfmini/share/tfmini/hook/ament_prefix_path.sh'
+[0.697s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.697s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/VAS/build/libcamera': /usr/bin/meson setup --libdir=lib --prefix=/VAS/install/libcamera --buildtype=release /VAS/build/libcamera /VAS/libcamera
+[1.295s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/VAS/tfmini'
+[1.296s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.297s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/VAS/tfmini': PYTHONPATH=/VAS/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/VAS/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /VAS/build/tfmini/build install --record /VAS/build/tfmini/install.log --single-version-externally-managed install_data
+[2.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/VAS/tfmini' returned '0': PYTHONPATH=/VAS/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/VAS/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /VAS/build/tfmini/build install --record /VAS/build/tfmini/install.log --single-version-externally-managed install_data
+[2.819s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini' for CMake module files
+[2.819s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini' for CMake config files
+[2.820s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini/lib'
+[2.820s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini/bin'
+[2.820s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini/lib/pkgconfig/tfmini.pc'
+[2.821s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini/lib/python3.10/site-packages'
+[2.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('tfmini', 'pythonpath')
+[2.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/tfmini/share/tfmini/hook/pythonpath.ps1'
+[2.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/tfmini/share/tfmini/hook/pythonpath.dsv'
+[2.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/tfmini/share/tfmini/hook/pythonpath.sh'
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/tfmini/bin'
+[2.825s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tfmini)
+[2.826s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/tfmini/share/tfmini/package.ps1'
+[2.827s] INFO:colcon.colcon_core.shell:Creating package descriptor '/VAS/install/tfmini/share/tfmini/package.dsv'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/tfmini/share/tfmini/package.sh'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/tfmini/share/tfmini/package.bash'
+[2.829s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/tfmini/share/tfmini/package.zsh'
+[2.830s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/VAS/install/tfmini/share/colcon-core/packages/tfmini)
+[5.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/VAS/build/libcamera' returned '0': /usr/bin/meson setup --libdir=lib --prefix=/VAS/install/libcamera --buildtype=release /VAS/build/libcamera /VAS/libcamera
+[5.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/VAS/build/libcamera': /usr/bin/meson compile
+[217.415s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/VAS/build/libcamera' returned '0': /usr/bin/meson compile
+[217.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/VAS/build/libcamera': /usr/bin/meson install
+[218.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(libcamera)
+[218.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/VAS/build/libcamera' returned '0': /usr/bin/meson install
+[218.513s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera' for CMake module files
+[218.513s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera' for CMake config files
+[218.514s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera/lib'
+[218.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcamera', 'ld_library_path_lib')
+[218.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/libcamera/share/libcamera/hook/ld_library_path_lib.ps1'
+[218.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/libcamera/share/libcamera/hook/ld_library_path_lib.dsv'
+[218.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/libcamera/share/libcamera/hook/ld_library_path_lib.sh'
+[218.516s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera/libexec'
+[218.516s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera/bin'
+[218.516s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera/lib/pkgconfig/libcamera.pc'
+[218.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcamera', 'pkg_config')
+[218.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/libcamera/share/libcamera/hook/pkg_config.ps1'
+[218.517s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/libcamera/share/libcamera/hook/pkg_config.dsv'
+[218.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/libcamera/share/libcamera/hook/pkg_config.sh'
+[218.518s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera/lib/python3.10/site-packages'
+[218.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('libcamera', 'pythonpath')
+[218.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/libcamera/share/libcamera/hook/pythonpath.ps1'
+[218.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/libcamera/share/libcamera/hook/pythonpath.dsv'
+[218.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/libcamera/share/libcamera/hook/pythonpath.sh'
+[218.519s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/libcamera/bin'
+[218.520s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/libcamera/share/libcamera/package.ps1'
+[218.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/VAS/install/libcamera/share/libcamera/package.dsv'
+[218.522s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/libcamera/share/libcamera/package.sh'
+[218.523s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/libcamera/share/libcamera/package.bash'
+[218.523s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/libcamera/share/libcamera/package.zsh'
+[218.523s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/VAS/install/libcamera/share/colcon-core/packages/libcamera)
+[218.524s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/VAS/camera_ros' with build type 'ament_cmake'
+[218.524s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/VAS/camera_ros'
+[218.524s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[218.524s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[218.540s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/VAS/build/camera_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/VAS/install/tfmini:/opt/ros/humble LD_LIBRARY_PATH=/VAS/install/libcamera/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/VAS/install/libcamera/lib/pkgconfig PYTHONPATH=/VAS/install/libcamera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /VAS/build/camera_ros -- -j4 -l4
+[218.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/VAS/build/camera_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/VAS/install/tfmini:/opt/ros/humble LD_LIBRARY_PATH=/VAS/install/libcamera/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/VAS/install/libcamera/lib/pkgconfig PYTHONPATH=/VAS/install/libcamera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /VAS/build/camera_ros -- -j4 -l4
+[218.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/VAS/build/camera_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/VAS/install/tfmini:/opt/ros/humble LD_LIBRARY_PATH=/VAS/install/libcamera/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/VAS/install/libcamera/lib/pkgconfig PYTHONPATH=/VAS/install/libcamera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /VAS/build/camera_ros
+[218.857s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_ros)
+[218.858s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros' for CMake module files
+[218.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/VAS/build/camera_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/VAS/install/tfmini:/opt/ros/humble LD_LIBRARY_PATH=/VAS/install/libcamera/lib:${LD_LIBRARY_PATH} PKG_CONFIG_PATH=/VAS/install/libcamera/lib/pkgconfig PYTHONPATH=/VAS/install/libcamera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /VAS/build/camera_ros
+[218.860s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros' for CMake config files
+[218.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_ros', 'cmake_prefix_path')
+[218.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/cmake_prefix_path.ps1'
+[218.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/camera_ros/share/camera_ros/hook/cmake_prefix_path.dsv'
+[218.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/cmake_prefix_path.sh'
+[218.867s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/lib'
+[218.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_ros', 'ld_library_path_lib')
+[218.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/ld_library_path_lib.ps1'
+[218.868s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/camera_ros/share/camera_ros/hook/ld_library_path_lib.dsv'
+[218.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/ld_library_path_lib.sh'
+[218.872s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/bin'
+[218.873s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/lib/pkgconfig/camera_ros.pc'
+[218.873s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/lib/python3.10/site-packages'
+[218.873s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/bin'
+[218.874s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.ps1'
+[218.874s] INFO:colcon.colcon_core.shell:Creating package descriptor '/VAS/install/camera_ros/share/camera_ros/package.dsv'
+[218.876s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.sh'
+[218.879s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.bash'
+[218.882s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.zsh'
+[218.890s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/VAS/install/camera_ros/share/colcon-core/packages/camera_ros)
+[218.944s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_ros)
+[218.945s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros' for CMake module files
+[218.945s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros' for CMake config files
+[218.946s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_ros', 'cmake_prefix_path')
+[218.946s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/cmake_prefix_path.ps1'
+[218.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/camera_ros/share/camera_ros/hook/cmake_prefix_path.dsv'
+[218.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/cmake_prefix_path.sh'
+[218.949s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/lib'
+[218.949s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_ros', 'ld_library_path_lib')
+[218.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/ld_library_path_lib.ps1'
+[218.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/VAS/install/camera_ros/share/camera_ros/hook/ld_library_path_lib.dsv'
+[218.951s] INFO:colcon.colcon_core.shell:Creating environment hook '/VAS/install/camera_ros/share/camera_ros/hook/ld_library_path_lib.sh'
+[218.952s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/bin'
+[218.952s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/lib/pkgconfig/camera_ros.pc'
+[218.953s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/lib/python3.10/site-packages'
+[218.953s] Level 1:colcon.colcon_core.environment:checking '/VAS/install/camera_ros/bin'
+[218.954s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.ps1'
+[218.954s] INFO:colcon.colcon_core.shell:Creating package descriptor '/VAS/install/camera_ros/share/camera_ros/package.dsv'
+[218.955s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.sh'
+[218.956s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.bash'
+[218.957s] INFO:colcon.colcon_core.shell:Creating package script '/VAS/install/camera_ros/share/camera_ros/package.zsh'
+[218.957s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/VAS/install/camera_ros/share/colcon-core/packages/camera_ros)
+[218.958s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[218.959s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[218.959s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[218.959s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[218.972s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[218.972s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[218.972s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[218.972s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[218.972s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[218.972s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[218.972s] INFO:colcon.colcon_core.shell:Creating prefix script '/VAS/install/local_setup.ps1'
+[218.974s] INFO:colcon.colcon_core.shell:Creating prefix util module '/VAS/install/_local_setup_util_ps1.py'
+[218.976s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/VAS/install/setup.ps1'
+[218.980s] INFO:colcon.colcon_core.shell:Creating prefix script '/VAS/install/local_setup.sh'
+[218.987s] INFO:colcon.colcon_core.shell:Creating prefix util module '/VAS/install/_local_setup_util_sh.py'
+[218.993s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/VAS/install/setup.sh'
+[219.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/VAS/install/local_setup.bash'
+[219.001s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/VAS/install/setup.bash'
+[219.004s] INFO:colcon.colcon_core.shell:Creating prefix script '/VAS/install/local_setup.zsh'
+[219.005s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/VAS/install/setup.zsh'

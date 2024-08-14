@@ -1,0 +1,21 @@
+[0.617s] Invoking command in '/home/ros/VAS/tfmini': PYTHONPATH=/home/ros/VAS/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/VAS/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /home/ros/VAS/build/tfmini/build install --record /home/ros/VAS/build/tfmini/install.log --single-version-externally-managed install_data
+[0.839s] running egg_info
+[0.840s] writing ../build/tfmini/tfmini.egg-info/PKG-INFO
+[0.841s] writing dependency_links to ../build/tfmini/tfmini.egg-info/dependency_links.txt
+[0.843s] writing entry points to ../build/tfmini/tfmini.egg-info/entry_points.txt
+[0.843s] writing requirements to ../build/tfmini/tfmini.egg-info/requires.txt
+[0.844s] writing top-level names to ../build/tfmini/tfmini.egg-info/top_level.txt
+[0.848s] reading manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'
+[0.849s] writing manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'
+[0.849s] running build
+[0.849s] running build_py
+[0.849s] running install
+[0.849s] running install_lib
+[0.851s] running install_data
+[0.851s] running install_egg_info
+[0.853s] removing '/home/ros/VAS/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info' (and everything under it)
+[0.853s] Copying ../build/tfmini/tfmini.egg-info to /home/ros/VAS/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info
+[0.854s] running install_scripts
+[0.879s] Installing tfmini_node script to /home/ros/VAS/install/tfmini/lib/tfmini
+[0.880s] writing list of installed files to '/home/ros/VAS/build/tfmini/install.log'
+[0.937s] Invoked command in '/home/ros/VAS/tfmini' returned '0': PYTHONPATH=/home/ros/VAS/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/VAS/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /home/ros/VAS/build/tfmini/build install --record /home/ros/VAS/build/tfmini/install.log --single-version-externally-managed install_data

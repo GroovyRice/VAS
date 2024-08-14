@@ -1,0 +1,21 @@
+[11.692s] Invoking command in '/vas/tfmini': PYTHONPATH=/vas/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /vas/build/tfmini/build install --record /vas/build/tfmini/install.log --single-version-externally-managed install_data
+[13.279s] running egg_info
+[13.280s] writing ../build/tfmini/tfmini.egg-info/PKG-INFO
+[13.283s] writing dependency_links to ../build/tfmini/tfmini.egg-info/dependency_links.txt
+[13.327s] writing entry points to ../build/tfmini/tfmini.egg-info/entry_points.txt
+[13.327s] writing requirements to ../build/tfmini/tfmini.egg-info/requires.txt
+[13.327s] writing top-level names to ../build/tfmini/tfmini.egg-info/top_level.txt
+[13.353s] reading manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'
+[13.353s] writing manifest file '../build/tfmini/tfmini.egg-info/SOURCES.txt'
+[13.353s] running build
+[13.353s] running build_py
+[13.353s] running install
+[13.353s] running install_lib
+[13.359s] running install_data
+[13.360s] running install_egg_info
+[13.380s] removing '/vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info' (and everything under it)
+[13.381s] Copying ../build/tfmini/tfmini.egg-info to /vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info
+[13.382s] running install_scripts
+[13.575s] Installing tfmini_node script to /vas/install/tfmini/lib/tfmini
+[13.575s] writing list of installed files to '/vas/build/tfmini/install.log'
+[14.021s] Invoked command in '/vas/tfmini' returned '0': PYTHONPATH=/vas/build/tfmini/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/vas/install/tfmini/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/tfmini build --build-base /vas/build/tfmini/build install --record /vas/build/tfmini/install.log --single-version-externally-managed install_data
