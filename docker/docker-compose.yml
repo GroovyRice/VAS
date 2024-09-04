@@ -44,3 +44,16 @@ services:
       - DISPLAY
       - LIBGL_ALWAYS_SOFTWARE=1
     tty: true
+  rosbridge:
+    image: rosbridge:latest
+    network_mode: "host"
+    tty: true
+    environment:
+      - ROS_MASTER_URI=http://localhost:11311
+      - ROS_IP=localhost
+  webinterface:
+    image: webinterface:latest
+    ports:
+      - "3000:3000"
+    tty: true
+

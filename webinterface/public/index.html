@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROS2 Web Interface</title>
+  <!-- Load roslib.js from local directory -->
+  <script src="/js/roslib.min.js"></script>
+</head>
+<body>
+  <h1>ROS2 Web Interface</h1>
+  <div>
+    <p>Latest message from ROS2:</p>
+    <p id="rosMessage">Waiting for message...</p>
+  </div>
+
+  <script>
+    // Connect to ROS via rosbridge WebSocket
+    var ros = new ROSLIB.Ros({
+      url: 'ws://localhost:9090'
+    });
+
+    ros.on('connection', function() {
+      console.log('Connected to ROS2');
+    });
+
+    ros.on('error', function(error) {
+      console.log('Error connecting to ROS2:', error);
+    });
+
+    ros.on('close', function() {
+      console.log('Connection to ROS2 closed');
+    });
+
+    // Subscribe to a ROS2 topic
+    var listener = new ROSLIB.Topic({
+      ros: ros,
+      name: '/tts',
+      messageType: 'std_msgs/String'
+    });
+
+    listener.subscribe(function(message) {
+      console.log('Received message:', message.data);
+      document.getElementById('rosMessage').innerText = message.data;
+    });
+  </script>
+</body>
+</html>

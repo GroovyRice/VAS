@@ -46,7 +46,7 @@ tmux send-keys -t ros2_services:0.2 "colcon build" C-m
 tmux send-keys -t ros2_services:0.2 "source install/setup.bash" C-m
 tmux send-keys -t ros2_services:0.2 "ros2 run subscribers detections_node" C-m
 
-# Pane 3: vas
+# Pane 3: tts
 tmux select-pane -t 3
 tmux send-keys -t ros2_services:0.3 "docker exec -it docker_tts_1 /bin/bash" C-m
 tmux send-keys -t ros2_services:0.3 "source /opt/ros/humble/setup.bash" C-m
@@ -54,9 +54,6 @@ tmux send-keys -t ros2_services:0.3 "cd /vas" C-m
 tmux send-keys -t ros2_services:0.3 "colcon build" C-m
 tmux send-keys -t ros2_services:0.3 "source install/setup.bash" C-m
 tmux send-keys -t ros2_services:0.3 "ros2 run tts tts_node" C-m
-
-# Ensure the bottom-right pane is selected by default
-tmux select-pane -t 3
 
 # Attach to the tmux session
 tmux attach-session -t ros2_services

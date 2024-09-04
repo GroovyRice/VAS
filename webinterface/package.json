@@ -1,0 +1,13 @@
+{
+    "name": "ros-web-interface",
+    "version": "1.0.0",
+    "description": "A simple web interface for ROS2 using roslibjs",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
