@@ -1,1 +1,0 @@
-error removing /vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info: [Errno 39] Directory not empty: '/vas/install/tfmini/lib/python3.10/site-packages/tfmini-0.0.0-py3.10.egg-info'

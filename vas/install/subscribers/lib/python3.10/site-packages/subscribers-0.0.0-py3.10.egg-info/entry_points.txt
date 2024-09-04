@@ -1,4 +1,0 @@
-[console_scripts]
-detections_node = subscribers.detections_node:main
-image_node = subscribers.image_node:main
-

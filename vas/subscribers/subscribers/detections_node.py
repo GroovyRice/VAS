@@ -114,32 +114,36 @@ class ImageSubscriber(Node):
         
         objects = []
         objects.append([self.latest_distance / 100, "Object", "Forward", 0])
+
         for detection in self.latest_detections.detections:
             label = LABEL_MAP[int(detection.results[0].hypothesis.class_id)]
             id = detection.tracking_id
-            age = detection.tracking_age
-
-            if label not in FILTER_MAP and age > 30:
-                continue
-            
+            age = detection.tracking_age   
             x = detection.results[0].pose.pose.position.x         # X coordinate of the object's pose
             y = detection.results[0].pose.pose.position.y         # Y coordinate of the object's pose
             z = detection.results[0].pose.pose.position.z         # Z coordinate of the object's pose
+
             if z == 0:
+                continue
+
+            if label not in FILTER_MAP:
                 continue
 
             angle = math.degrees(math.atan(abs(x)/z))
 
-            if angle < 2.5:
+            if angle < 2:
                 direction = "Forward"
+                angle = 0
+                objects[0] = [z, label, direction, int(angle)]
             elif x > 0:
                 direction = "Right"
+                objects.append([z, label, direction, int(angle)])
             else:
                 direction = "Left"
+                objects.append([z, label, direction, int(angle)])
 
             self.get_logger().info(f'{label}: {x:.1f}, {y:.1f}, {z:.1f}, {angle:.0f} Degrees, {direction}, {id}, {age}')
 
-            objects.append([z, label, direction, int(angle)])
 
             bbox = detection.bbox
             center = bbox.center.position
@@ -167,27 +171,30 @@ class ImageSubscriber(Node):
 
     def determinations(self, objects):
         msg = ""
+        critical_distance = 5
         small = min(objects, key=lambda x: x[0])
-        if small[0] < 3:
-            msg += f"{small[1]}, "
-            if small[0] < 1:
-                msg += f"{int(small[0]*100)} centimetres ahead "
-            else:
-                msg += f"{int(small[0])} metres ahead "
-            if small[3] != 0:
-                msg += f"to the {small[2]}, {small[3]} Degrees"
+        if small[0] == 0:
+            msg = "Clear. "
         else:
-            msg += f"{len(objects)} Objects Ahead:"
-            for obj in objects:
-                if obj[0] < 1:
-                    msg += f"{int(obj[0]*100)} centimetres,"
+            msg += f"{small[1]}. "
+            if small[0] < critical_distance:
+                if small[0] < 1:
+                    msg += f"{int(small[0]*100)} centimetres. "
                 else:
-                    msg += f"{int(obj[0])} metres,"
-                msg += f"{obj[1]}"
-                if obj[3] == 0:
-                    msg += f"{obj[2]}"
+                    msg += f"{small[0]:.1f} metres. "
+                if small[3] != 0:
+                    msg += f"{small[2]}. {small[3]} Degrees. "
                 else:
-                    msg += f"{obj[3]} Degrees {obj[2]}. "
+                    msg += f"Ahead. "
+            elif small[0] > critical_distance and len(objects) == 1:
+                if small[0] < 1:
+                    msg += f"{int(small[0]*100)} centimetres. "
+                else:
+                    msg += f"{small[0]:.1f} metres. "
+            elif len(objects) > 1:
+                msg += f"{len(objects)} objects. "
+                for obj in objects:
+                    msg += f"{obj[1]}. "
 
         # IF (OBJECT within 3m)
         # > TTS CLOSEST OBJECT
@@ -195,6 +202,7 @@ class ImageSubscriber(Node):
         # > TTS CLOSEST OBJECT
         # ELSE
         # > TTS ALL OBJECTS
+
         if msg != "":
             self.publish(msg)
     

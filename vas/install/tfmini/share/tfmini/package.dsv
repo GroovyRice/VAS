@@ -1,6 +1,0 @@
-source;share/tfmini/hook/pythonpath.ps1
-source;share/tfmini/hook/pythonpath.dsv
-source;share/tfmini/hook/pythonpath.sh
-source;share/tfmini/hook/ament_prefix_path.ps1
-source;share/tfmini/hook/ament_prefix_path.dsv
-source;share/tfmini/hook/ament_prefix_path.sh

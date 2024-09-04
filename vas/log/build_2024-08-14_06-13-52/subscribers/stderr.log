@@ -1,2 +1,0 @@
-/vas/install/subscribers/lib/python3.10/site-packages/subscribers/detections_node.py:141: SyntaxWarning: "is not" with a literal. Did you mean "!="?
-  if msg is not "":
