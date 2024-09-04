@@ -1,23 +1,83 @@
-# This is an auto generated Dockerfile for ros:ros-base
-# generated from docker_images_ros2/create_ros_image.Dockerfile.em
-FROM ros:humble-ros-core-jammy
+# Use a specific, stable version of Ubuntu as the base
+FROM ros:humble-ros-core-jammy AS base
 
-# install bootstrap tools
-RUN apt-get update && apt-get install --no-install-recommends -y \
-    build-essential \
-    git \
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Replace default shell with bash
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
+# Set the path for the code directory
+ENV CODE_PATH=/opt
+
+# Install bootstrap tools, necessary packages, and cleanup
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install tzdata \
+    build-essential apt-utils vim bzip2 tar gzip git curl wget python3 python3-pip cmake ca-certificates \
     python3-colcon-common-extensions \
     python3-colcon-mixin \
     python3-rosdep \
     python3-vcstool \
-    python3-pip \
+    espeak alsa-utils pulseaudio \
     && rm -rf /var/lib/apt/lists/*
 
-# bootstrap rosdep
+# Set up Python pip configuration
+RUN echo $'[global]\nbreak-system-packages = true' > /etc/pip.conf
+
+# Upgrade pip
+RUN pip install --quiet --upgrade pip --ignore-installed
+
+# Clone the Piper TTS repository
+RUN git clone https://github.com/rhasspy/piper.git $CODE_PATH/piper
+WORKDIR $CODE_PATH/piper
+# Use a tested version of Piper
+RUN git checkout tags/2023.11.14-2
+
+# Install and configure Piper Phonemize
+WORKDIR $CODE_PATH/piper/lib
+RUN mkdir -p Linux-arm64/piper_phonemize
+WORKDIR Linux-arm64/piper_phonemize
+# Use a tested version of Piper Phonemize
+RUN wget https://github.com/rhasspy/piper-phonemize/releases/download/v1.1.0/libpiper_phonemize-arm64.tar.gz \
+    && tar -xf libpiper_phonemize-arm64.tar.gz \
+    && rm libpiper_phonemize-arm64.tar.gz \
+    && cp -r $CODE_PATH/piper/lib/Linux-arm64/piper_phonemize/lib/espeak-ng-data /usr/share/espeak-ng-data
+
+# Build and test Piper
+WORKDIR $CODE_PATH/piper
+RUN cmake -Bbuild -DCMAKE_INSTALL_PREFIX=install
+RUN cmake --build build --config Release
+RUN cmake --install build
+WORKDIR build
+RUN ctest --config Release
+
+# Create a short alias for Piper
+RUN echo "alias piper='$CODE_PATH/piper/build/piper'" >> ~/.bashrc \
+    && source ~/.bashrc
+
+# Create model directory and add sample voices
+RUN mkdir -p $CODE_PATH/piper/voices/aru/medium
+RUN mkdir -p $CODE_PATH/piper/voices/alan/low
+
+# Create a list file with each URL on a new line
+RUN echo -e "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/aru/medium/en_GB-aru-medium.onnx\n \
+https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/aru/medium/en_GB-aru-medium.onnx.json\n \
+https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/aru/medium/MODEL_CARD" > aru_medium_model_file_urls.txt
+
+# Download all URLs listed in the file
+RUN wget -i aru_medium_model_file_urls.txt -P $CODE_PATH/piper/voices/aru/medium
+
+# Create a list file with each URL on a new line for alan/low voice
+RUN echo -e "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/alan/low/en_GB-alan-low.onnx\n \
+https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/alan/low/en_GB-alan-low.onnx.json\n \
+https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_GB/alan/low/MODEL_CARD" > alan_low_model_file_urls.txt
+
+# Download all URLs listed in the file for alan/low
+RUN wget -i alan_low_model_file_urls.txt -P $CODE_PATH/piper/voices/alan/low
+
+# Bootstrap rosdep
 RUN rosdep init && \
   rosdep update --rosdistro $ROS_DISTRO
 
-# setup colcon mixin and metadata
+# Setup colcon mixin and metadata
 RUN colcon mixin add default \
       https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml && \
     colcon mixin update && \
@@ -25,17 +85,10 @@ RUN colcon mixin add default \
       https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml && \
     colcon metadata update
 
-# install ros2 packages
+# Install ROS2 packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     ros-humble-ros-base=0.10.0-1* \
     && rm -rf /var/lib/apt/lists/*
-
-# Install Python, pyttsx3, espeak, aplay, and pulseaudio
-RUN apt-get update && \
-    apt-get install -y python3-pip espeak alsa-utils pulseaudio && \
-    rm -rf /var/lib/apt/lists/*
-
-RUN pip3 install pyttsx3
 
 # Automatically source ROS setup script
 RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
